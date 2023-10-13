@@ -1,0 +1,111 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais da página */
+body {
+    background: url(https://imgnike-a.akamaihd.net/branding/home-sbf/touts/tout-Dia-das-crian%C3%A7as-28-09-desk-v2.jpg)  ;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.header {
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+    text-align: center; /* Centralizar o texto no cabeçalho */
+}
+
+.header-logo img {
+    width: 100px;
+}
+
+.header-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center; /* Centralizar os links de navegação */
+}
+
+.header-nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.main-content {
+    padding: 20px;
+    text-align: center; /* Centralizar o texto no conteúdo */
+}
+
+.sobre {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.sobre h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.sobre p {
+    margin-bottom: 20px;
+}
+
+.footer {
+    margin-top: 200px;
+    text-align: center;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+}
+
+
+.header h1 {
+    font-size: 36px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s, transform 1s;
+}
+
+.header h1.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.header-nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s, transform 1s;
+}
+
+.header-nav a.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.barra {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    margin-top: 100px;
+    background-color: rgba(24, 23, 23, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+
+  

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Loja Nike</title>
+    <link rel="stylesheet" href="nike.css">
+    <link rel="stylesheet" href="loading.css">
+
+</head>
+<body>
+    
+    <video autoplay muted loop>
+        <source src="https://nikevideo.nike.com/media/v1/pmp4/static/clear/72451143001/6767b74f-3c5e-429c-be01-791e0a86054d/c6056678-cce6-473f-acb5-a3dee18f6ea2/main.mp4" type="video/mp4">
+    </video>
+    <header class="header">
+        <div class="header-logo">
+            <img src="https://miro.medium.com/v2/resize:fit:900/0*9hcinRdaHicrNpNE.jpg" alt="Nike Logo">
+        </div>
+        <nav class="header-nav">
+            <ul>
+                <li><a  id="link" href="produtos.html" class="page-link">Produtos</a></li>
+                <li><a id="link"href="sobre.html" class="page-link">Sobre</a></li>
+                <li><a id="link" href="mailto:danielmigueldms@gmail.com?subject=Volta pra mim vitória, ainda te amo">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="loading-screen">
+        <div class="loading-spinner"></div>
+    </div>
+    <main class="main-content">
+        <section class="products">
+            <div class="product">
+                <img  clas="img" src="https://images.tcdn.com.br/img/img_prod/628041/180_tenis_nike_revolution_6_next_nature_feminino_preto_branco_21106_1_768e13d7a9a4d772ca218ec456ee33e4.png" alt="Tênis Nike">
+                <h2>Tênis Nike Air Max EXs</h2>
+                <p>Conforto e estilo incomparáveis.</p>
+                <p class="preco">$129.99</p>
+                <button class="buy-button">Adicionar ao carrinho</button>
+                <div class="carrinho">
+                    <i class='bx bx-cart'></i> <!-- Ícone de carrinho -->
+                    <ul id="carrinho-lista">
+                        <!-- Itens do carrinho serão adicionados aqui -->
+                    </ul>
+                    <div class="notificacao" id="notificacao">Produto adicionado!</div>
+                </div>
+            </div>
+        
+            
+            <div class="product">
+                <img src="https://cdn.awsli.com.br/600x450/1900/1900104/produto/225065554/carro-1-s91kk6ljix.png" alt="Camiseta Nike">
+                <h2>Camiseta Nike Sportswear</h2>
+                <p>Design moderno e confortável.</p>
+                <p class="preco">$39.99</p>
+                <button class="buy-button">Adicionar ao carrinho</button>
+            </div>
+            
+            <div class="product">
+                <img src="https://cdnv2.moovin.com.br/casaajita/imagens/produtos/det/mochila-nike-heritage-af4a2a2603b42b22257efdcd32263114.png" alt="Mochila Nike">
+                <h2>Mochila Nike Heritage convolver</h2>
+                <p>Leve e espaçosa</p>
+                <p class="preco">$49.99</p>
+                <button class="buy-button">Adicionar ao carrinho</button>
+            </div>
+        </section>
+    </main>
+    <div class="barra">
+        <div class="barra-inferior"></div>
+    </div>
+    <script src="nike.js"></script>
+    
+</body>
+</html>

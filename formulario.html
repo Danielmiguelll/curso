@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="formulario.css">
+    <title>Formulário de Compra</title>
+</head>
+<body>
+    <div class="container">
+        <form id="purchase-form">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+<!-- ... Código HTML existente ... -->
+
+<div class="inline-block">
+    <label for="cep">CEP:</label>
+    <input type="text" id="cep" name="cep"  placeholder="XXXXX-XXX" required>
+   
+</div>
+<div class="inline-block">
+    <label for="estado">Estado:</label>
+    <input type="text" id="estado" name="estado" readonly>
+</div>
+<div class="inline-block">
+    <label for="rua">Rua:</label>
+    <input type="text" id="rua" name="rua">
+</div>
+<div class="inline-block">
+    <label for="bairro">Bairro:</label>
+    <input type="text" id="bairro" name="bairro">
+</div>
+
+<!-- ... Mais código HTML existente ... -->
+
+
+            <div class="inline-block">
+                <label for="produto">Produto:</label>
+                <input type="text" id="produto" name="produto">
+            </div>
+            <div class="inline-block">
+                <label for="quantidade">Quantidade:</label>
+                <input type="text" id="quantidade" name="quantidade">
+            </div>
+
+            <label for="cartao_credito">Cartão de Crédito:</label>
+            <input type="text" id="cartao_credito" placeholder="Insira o número do cartão" oninput="identificarBandeira()">
+
+            <label id="bandeira" class="hidden">Bandeira: Desconhecida</label>
+            <img id="bandeira_imagem" class="hidden" src="" alt="Bandeira">
+
+            <label for="validade">Data de Validade:</label>
+            <input type="text" id="validade" name="validade" placeholder="MM/AA" pattern="\d{2}/\d{2}" required>
+
+            <label for="codigo_seguranca">Código de Segurança (CVV):</label>
+            <input type="text" id="codigo_seguranca" name="codigo_seguranca" pattern="\d{3}" placeholder="3 dígitos" required>
+        
+           <center><button type="submit" id="submit-button">Enviar</button></center>  
+            
+        </form>
+    </div>
+    <script src="formulário.js"></script>
+</body>
+</html>

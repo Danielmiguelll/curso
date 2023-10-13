@@ -1,0 +1,128 @@
+#submit-button {
+    width: 50%;
+    background-color: #171817;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Adiciona uma transição suave para a animação de cor */
+}
+
+#submit-button:hover {
+    background-color: #2c2e2c; /* Cor alterada ao passar o mouse */
+}
+        body {
+            background: url(https://file.hstatic.net/200000384421/article/thiet_ke_chua_co_ten__9__13768c3548f14ba98e07579c10937676_1024x1024.png) no-repeat ;
+            background-size: 100%;
+            font-family: Arial, sans-serif;
+            background-color: #ccc;
+        }
+
+        img {
+            max-width: 100px;
+            max-height: 50px;
+            margin-left: 20px;
+        }
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+          
+            background: #363535;
+            padding: 40px;
+            border-radius: 5px;
+            margin-top: 20px
+        }
+
+        label, input, select {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        select {
+            box-shadow: #363535;
+            background-color: #f0e3e37a;
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #1d1c1c;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background: #030303;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background: #414242;
+        }
+
+        
+    /* ... Outras regras de estilo existentes ... */
+
+    .hidden {
+        display: none;
+    }
+
+    .inline-block {
+    display: inline-block;
+    width: 45%; /* Largura igual para os campos CEP, Estado, Rua e Bairro */
+    margin-right: 10px; /* Espaço entre os campos */
+}
+
+/* Ajuste a largura do campo CEP para evitar que ele invada outros campos */
+#cep {
+    width: 90%; /* Ajuste a largura conforme necessário */
+}
+
+/* Ajuste a largura do campo Estado, Rua e Bairro para evitar que eles invadam outros campos */
+#estado, #rua, #bairro {
+    width: 96%; /* Ajuste a largura conforme necessário */
+}
+
+
+    /* Adicione a regra de estilo abaixo para limitar a largura do input de "produto" */
+    #produto {
+        max-width: 85%;
+    }
+    button{          
+            background: #030303;
+            color: #fff;
+          
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;}
+
+            #cep-suggestions {
+            position: absolute;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            list-style: none;
+            padding: 0;
+        }
+
+        #cep-suggestions li {
+            padding: 5px;
+            cursor: pointer;
+        }
+
+        #cep-suggestions li:hover {
+            background-color: #f0f0f0;
+        }

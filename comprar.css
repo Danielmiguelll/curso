@@ -1,0 +1,313 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ece5e5b9;
+}
+
+header {
+  background-color: #000000;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-container img {
+  height: 50px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.search-bar button {
+  background-color: #202020;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.home-button {
+  text-decoration: none;
+  color: #fff;
+  background-color: #272525;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.produtos {
+  max-width: 1200px;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.produto-container {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.miniaturaa{
+border-radius: 3px;
+}
+.imagens-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px; /* Espaçamento horizontal entre imagens */
+  padding-top: 20px;
+  padding-left: 50px;
+}
+
+.imagens-grid img {
+  max-width: 200px; /* Tamanho das imagens */
+  height: auto;
+}
+
+.informacoes-produto {
+  max-width: 3000px;
+  margin-left: 30px; /* Espaçamento entre o grid e as informações */
+  margin-top: 20px;
+}
+
+.informacoes-produto h2 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.informacoes-produto p {
+  font-size: 14px;
+}
+
+.informacoes-produto .preco {
+  font-size: 16px;
+  font-weight: bold;
+  color: #181616;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+footer p {
+  margin: 0;
+}
+       /* Estilos para as estrelas de avaliação */
+       .avaliacao {
+        font-size: 18px; /* Tamanho das estrelas */
+      }
+  
+      /* Estilizar estrelas preenchidas */
+      .avaliacao .estrela-preenchida {
+        display: inline-block;
+        margin-right: 5px; /* Espaçamento entre as estrelas */
+      }
+      .avaliacao .estrela{
+        display: inline-block;
+        margin-right: 5px;
+        color: #ccc; /* Cor de fonte para estrelas vazias */
+      }
+  
+      /* Estilos para o quadrado de média de notas */
+      .media-notas {
+        display: inline-block;
+        width: 18px; /* Largura do quadrado, proporcional ao tamanho das estrelas */
+        height: 18px; /* Altura do quadrado, proporcional ao tamanho das estrelas */
+        background-color: #ccc; /* Cor de fundo do quadrado, você pode ajustar para atender ao seu esquema de cores */
+        color: #333; /* Cor da fonte do número */
+        font-size: 12px; /* Tamanho da fonte do número */
+        text-align: center; /* Centralizar o texto verticalmente */
+        line-height: 18px; /* Centralizar o texto verticalmente */
+        margin-left: 10px; /* Espaçamento à esquerda das estrelas */
+      }
+ /* Estilo para os preços */
+ .preco {
+  font-size: 20px; /* Tamanho da fonte do preço */
+  color: #000; /* Cor do texto do preço (preto) */
+  display: inline-block; /* Exibir os preços em linha */
+}
+
+/* Estilo para o preço em destaque (599) */
+.preco-destaque {
+  color: rgba(0, 0, 0, 0.5); /* Cor do texto do preço em destaque (meio transparente) */
+  text-decoration: line-through; /* Linha que passa no meio das letras */
+  display: inline-block; /* Exibir o preço em destaque em linha */
+}
+
+.desconto {
+  font-size: 16px; /* Tamanho da fonte do desconto */
+  color: #008000; /* Cor do texto do desconto (verde) */
+  display: inline-block; /* Exibir o desconto em linha */
+}
+
+/* Estilo para o preço do Pix */
+.preco-pix {
+  color: #333; /* Cor do texto do preço no Pix (um pouco abaixo do "309") */
+  display: inline-block; /* Exibir o preço do Pix em linha */
+}
+
+/* Estilo para a seção de imagens em miniatura */
+.imagens-miniatura {
+  display: flex; /* Usamos flexbox para alinhar as imagens em miniatura ao lado do grid */
+  gap: 10px; /* Espaçamento entre as imagens */
+  margin-top: 20px; /* Margem superior para separar das informações do produto */
+}
+
+/* Estilo para as imagens em miniatura */
+.miniatura {
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 100px; /* Largura fixa para as imagens em miniatura */
+  height: auto; /* Mantém a proporção da imagem */
+}
+.botoes {
+  display: flex;
+  align-items: center;
+}
+
+.provador-virtual {
+  display: flex;
+  align-items: center;
+  margin-right: 200px;
+}
+
+
+.tabela-medidas {
+  display: flex;
+  align-items: center;
+}
+
+
+/* Estilo para o texto "Provador Virtual" e "Tabela de Medidas" */
+span {
+  font-size: 15px; /* Tamanho do texto */
+  color: #000; /* Cor do texto (preto) */
+}
+.tamanho{
+  padding-top: 20px;
+  margin-right: 20px;
+}
+.custom-checkbox {
+  flex-wrap: wrap; 
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  grid-gap: 5px; /* Espaçamento entre os elementos */
+  justify-content: flex-start; /* Alinha à esquerda para a próxima linha */
+  align-items: center;
+}
+.checkbox-group {
+  display: flex;
+  align-items: center;
+}
+.custom-checkbox .last-checkbox {
+margin-right: 0; /* Remova a margem direita do último elemento */
+}
+
+.custom-checkbox input[type="radio"] {
+  display: none; /* Ocultar o <input type="radio> real */
+}
+
+.custom-checkbox input[type="radio"] + label {
+  position: relative;
+  padding-left: 111px; /* Espaço para o falso checkbox */
+  cursor: pointer;
+}
+
+.custom-checkbox input[type="radio"] + label:before {
+  content: attr(data-description); /* Exibe o conteúdo do atributo data-description como o número */
+  margin-top: 20px;
+ 
+  
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 200px; /* Largura desejada para o checkbox */
+  height: 200px; /* Altura desejada para o checkbox */
+  border: 1px solid; /* Cor da borda do checkbox */
+  border-radius: 4px; /* Borda arredondada para o checkbox (opcional) */
+  background-color: transparent; /* Cor de fundo do checkbox */
+}
+
+.custom-checkbox input[type="radio"] + label:before {
+  display: block;
+  width: 100px; /* Largura desejada para o checkbox */
+  height: 50px; /* Altura desejada para o checkbox */
+  border: 2px solid #c5bfbf; /* Cor da borda do checkbox */
+  border-radius: 4px; /* Borda arredondada para o checkbox (opcional) */
+  text-align: center;
+  line-height: 50px; /* Centralizar verticalmente o número */
+  transition:  0.3s; /* Efeito de transição na borda */
+  background-color: transparent;
+}
+
+.custom-checkbox input[type="radio"] + label:hover:before {
+  border-color: #000; /* Cor preta no hover da borda */
+}
+
+.cabide-image {
+  width: 24px; /* Defina o tamanho desejado para a imagem */
+  height: 24px;
+  margin-right: 10px; /* Espaço entre a imagem e o texto */
+}
+
+.inferior{
+  padding-top: 51px;
+  clear: both; /* ou clear: both; */
+}
+
+.botao-compra {
+  border: #020202;
+  color: white;
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  width: 300px;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  margin: 88px;
+}
+
+.botao-compra:hover {
+  background-color: #383838; /* Cor de fundo do botão no hover */
+}
+a{
+  text-decoration: none;
+  color: inherit;
+
+}
+.video-proportional {
+  max-width: 100%;
+  height: auto;
+}
